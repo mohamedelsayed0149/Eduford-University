@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/cs2?family=Poppins:wght@100:200:300:400:500:600:700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times close" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="hero-btn" id="login-menu">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li class="hero-btn" id="login-menu"><a href="login.html">SignUp</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>"Contact Us"</h1>
+    </section>
+
+    <!--about us content-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13652.350987852602!2d29.9078912!3d31.1905803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91668517b69b42f2!2sFaculty%20of%20Science%2C%20Alexandria%20University!5e0!3m2!1sen!2seg!4v1616676190355!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>
+                        <h5>El Shatby Road behind El Ethad Club</h5>
+                        <p> Egypt, Alexandia</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                        <h5>+2 (011-575-510-41)</h5>
+                        <p>Saturday to Thursday, 8 AM to 6 PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <span>
+                        <h5>info@facultyofscience.com</h5>
+                        <p>Email us your info please..!</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="submit" method="post">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <input type="text" placeholder="Enter Your Subject" required>
+                    <textarea placeholder="Message" rows="8" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+   
+
+    <!--Footer-->
+    <section class="footer">
+        <h3>"About Us"</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam illo, commodi cum placeat deleniti optio tenetur, hic sint architecto aspernatur veritatis! <br>Asperiores a aliquid totam unde impedit, eligendi vel excepturi!</p>
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart" aria-hidden="true"></i><strong> Mohamed El Sayed</strong></p>
+    </section>
+   
+   <!---Javascript for toggle Menu-->
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showMenu(){
+            navLinks.style.right='0';
+
+        }
+        function hideMenu(){
+            navLinks.style.right='-250px';
+            
+        }
+    </script>
+</body>
+</html>
